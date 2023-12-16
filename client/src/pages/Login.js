@@ -3,6 +3,7 @@ import { Form, Input, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../components/Spinner";
+import Layout from '../components/Layout/Layout';
 const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -32,6 +33,7 @@ const Login = () => {
   }, [navigate]);
   return (
     <>
+    <Layout>
       <div className="resgister-page ">
         {loading && <Spinner />}
         <Form layout="vertical" onFinish={submitHandler}>
@@ -49,6 +51,7 @@ const Login = () => {
           </div>
         </Form>
       </div>
+      </Layout>
     </>
   );
 };

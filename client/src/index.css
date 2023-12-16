@@ -30,6 +30,10 @@
 .about-page {
   text-align: center;
   padding: 20px;
+  /* background-image: url(./pages/Cdac.jpg); */
+  background-color: rgba(255, 255, 255, 0.5);
+
+
 }
 
 .creators-container {
@@ -60,4 +64,10 @@
 
 .creator-card p {
   margin: 0;
+}
+
+#team{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-style: italic;
 }
